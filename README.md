@@ -33,19 +33,17 @@ All models implemented work at features level, in other words, they all use a ba
 
 Next, depending on the unsupervised domain adaptation method the alignment network, the adversarial network as well as the gradient reversal layer are used.
 
-![text](https://bitbucket.org/orobix/domain_adaptation/raw/2badcd44469e4a979d5519b893698dbdfba85729/img/models/train.png){width=100 height=100}
-
+<img src="img/models/train.png" alt="drawing" width="700"/>
 
 Depending  on  the  chosen  block  different  models  can  be  imple-mented.
 
-![text1](https://bitbucket.org/orobix/domain_adaptation/raw/2badcd44469e4a979d5519b893698dbdfba85729/img/models/congif.png){width=100 height=100}
+<img src="img/models/congif.png" alt="drawing" width="700"/>
 
 During training, the downstream task, as well as unsupervised domain adap-tation, are performed. 
 
 As a result, the feature extractor (backbone) and the Classifier Network can be used at testing time to make inference on the unlabelled target domain 
 
-![text2](https://bitbucket.org/orobix/domain_adaptation/raw/2badcd44469e4a979d5519b893698dbdfba85729/img/models/test.png){width=100 height=100}
-
+<img src="img/models/test.png" alt="drawing" width="700"/>
 # Setup
 
 To completely install the requirements run:
