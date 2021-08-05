@@ -1,0 +1,13 @@
+# @package _group_
+_target_: src.domain_adaptation.models.adversarial-discriminative.CDAN.Cdan
+
+name: "CDAN"
+backbone: 'resnet50'
+adversarial_network_width: 1024
+dropout_adversarial_network: True
+random_dim: 1024
+source_classifier_width: 1024
+dropout_classifier_network: True
+random: False
+method: CDAN-E # CDAN, CDAN-E
+trade_off: 1

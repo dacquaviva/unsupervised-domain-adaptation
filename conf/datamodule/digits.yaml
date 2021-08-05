@@ -1,0 +1,27 @@
+# @package _group_
+_target_: src.datamodule.datamodule.DataModule 
+
+source_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Digits/Synth_Digits/"
+target_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Digits/SVHN/"
+dataset_type: Digits
+name_source_domain: Synth_Digits
+name_target_domain: SVHN
+n_class: 10
+batch_size : 128
+num_workers: 5
+validation_split: 0.
+num_sample_test_embeddings_projector: 1 #multiple of 384
+data_processing:
+  resize_size: 32
+  mean: [0.5, 0.5, 0.5]
+  std: [0.5, 0.5, 0.5]
+data_augmentation: 
+  resize_crop_size: 25
+  p: 0.5
+
+# DATASETS/DOMAINS NAME
+#mnist
+#USPS
+#mnist_m
+#SVHN
+#Synth_Digits

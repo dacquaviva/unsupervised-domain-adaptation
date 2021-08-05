@@ -1,0 +1,26 @@
+# @package _group_
+_target_: src.datamodule.datamodule.DataModule 
+
+#"/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/dtr/3437_st1/"
+#"/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/dtr/3437_st2"
+#"/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/dtr/4445_st1"
+#"/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/dtr/4445_st2"
+
+source_domain_path :  "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/dtr/4445"
+target_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/dtr/3437"
+dataset_type: dtr
+name_source_domain: "4445"
+name_target_domain: "3437"
+n_class: 2
+batch_size : 32
+num_workers: 5
+validation_split: 0.1
+num_sample_test_embeddings_projector: 1 #multiple of 384
+data_processing:
+  resize_size: 384
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+data_augmentation: 
+  resize_crop_size: 224
+  p: 0.
+

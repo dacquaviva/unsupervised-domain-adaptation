@@ -1,0 +1,17 @@
+# @package _global_
+
+# specify here default training configuration
+defaults:
+    - datamodule: objects #digits, objects
+    - model: CDAN #SOURCE_ONLY, DEEP_CORAL, DANN, ADDA, CDAN
+    - callbacks: callbacks 
+    - optim: adam #sgd, adam
+    - trainer: default_trainer #default_trainer, debug_trainer
+    - logger: tensorboard
+    - hydra/job_logging: colorlog
+    - hydra/hydra_logging: colorlog
+    
+hydra:
+    # output paths for hydra logs
+    run:
+        dir: ./logs/${datamodule.dataset_type}/${datamodule.name_source_domain}__${datamodule.name_target_domain}/${model.name}(${model.backbone})/${now:%Y-%m-%d}/${now:%H-%M-%S}

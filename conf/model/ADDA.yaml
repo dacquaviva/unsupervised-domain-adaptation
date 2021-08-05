@@ -1,0 +1,8 @@
+# @package _group_
+_target_: src.domain_adaptation.models.adversarial-discriminative.ADDA.Adda
+
+name: "ADDA"
+backbone: 'resnet50'
+adversarial_network_width: 1024 
+dropout_adversarial_network: True
+source_model_restore_path: "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/code/domain_adaptation/logs/oblocheck/tensor/LOTTO1_LEFT__LOTTO1_RIGHT/SOURCE_ONLY(resnet50)/2021-07-17/22-51-24"

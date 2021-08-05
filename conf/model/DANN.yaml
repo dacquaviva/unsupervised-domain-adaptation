@@ -1,0 +1,10 @@
+# @package _group_
+_target_: src.domain_adaptation.models.adversarial-discriminative.DANN.Dann
+
+name: "DANN"
+backbone: 'resnet50'
+adversarial_network_width: 1024 
+dropout_adversarial_network: True
+source_classifier_width: 1024
+dropout_classifier_network: True
+

@@ -1,0 +1,12 @@
+# @package _group_
+
+opt:
+  _target_: torch.optim.SGD
+  lr: 1e-3
+  momentum: 0.9
+  weight_decay: 5e-4
+  nesterov: True
+
+scheduler:
+  gamma: 10
+  beta: 0.75

@@ -1,0 +1,8 @@
+# @package _group_
+_target_: src.models.adversarial-discriminative.MANY_TO_TWO.Model
+
+name: "MANY_TO_TWO(ADDA)"
+backbone: 'resnet50'
+source_model_restore_path: "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/code/domain_adaptation/logs/dtr/4445_st1__4445_st2/MANY_TO_TWO(Normal)(resnet50)/2021-06-16/18-42-08"
+source_classifier_width: 1024
+discriminator_width: 1024 

@@ -1,0 +1,7 @@
+# @package _group_
+_target_: pytorch_lightning.loggers.tensorboard.TensorBoardLogger
+
+save_dir: "tensorboard/"
+name: ""
+default_hp_metric: False
+version: ""

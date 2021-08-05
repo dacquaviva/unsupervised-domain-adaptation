@@ -1,0 +1,7 @@
+# @package _group_
+_target_: src.models.transformer.MINE.Mine
+
+name: "Mine"
+backbone: 'ViT'
+source_classifier_width: 1024
+discriminator_width: 1024 

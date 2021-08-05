@@ -1,0 +1,23 @@
+# @package _group_
+_target_: src.datamodule.datamodule.DataModule 
+
+source_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Objects/complete/office-31/dslr"
+target_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Objects/complete/office-31/amazon"
+dataset_type: Object/office-31
+name_source_domain: dslr
+name_target_domain: amazon
+n_class: 31
+batch_size : 16
+num_workers: 5
+validation_split: 0.
+num_sample_test_embeddings_projector: 1 #multiple of 384
+data_processing:
+  resize_size: 256 #256, 384(ViT)
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+data_augmentation: 
+  resize_crop_size: 224
+  p: 0.5 #set to 0 when using ViT as backbone
+  
+# DATASETS NAME
+#Office-31: amazon, webcam, dslr

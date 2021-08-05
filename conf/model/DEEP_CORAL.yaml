@@ -1,0 +1,10 @@
+# @package _group_
+_target_: src.domain_adaptation.models.discrepancy-based.MODEL.Model
+
+name: "DeepCoral"
+backbone : 'resnet50'
+alignement_width: 1024 
+source_classifier_width: 1024
+dropout_classifier_network: True
+lamb: 10 # weight for transfer loss, it is a hyperparameter that needs to be tuned
+loss: coral

@@ -1,0 +1,7 @@
+# @package _group_
+_target_: src.models.adversarial-discriminative.PROVA.Prova
+
+name: "PROVA_ZERO"
+backbone: 'resnet50'
+adversarial_width: 1024
+source_model_restore_path: "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/code/domain_adaptation/logs/oblocheck/LOTTO1_RIGHT__LOTTO1_LEFT/Normal(resnet50)/2021-06-10/23-59-03"

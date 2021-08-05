@@ -1,0 +1,7 @@
+# @package _group_
+
+_target_: src.domain_adaptation.models.normal.SOURCE_ONLY.Source_only
+name: "SOURCE_ONLY"
+backbone : 'resnet50'
+source_classifier_width: 1024
+dropout_classifier_network: True
