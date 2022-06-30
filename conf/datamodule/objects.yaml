@@ -1,8 +1,8 @@
 # @package _group_
 _target_: src.datamodule.datamodule.DataModule 
 
-source_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Objects/complete/office-31/dslr"
-target_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Objects/complete/office-31/amazon"
+source_domain_path : "./datasets/Objects/complete/office-31/dslr"
+target_domain_path : ".datasets/Objects/complete/office-31/amazon"
 dataset_type: Object/office-31
 name_source_domain: dslr
 name_target_domain: amazon
