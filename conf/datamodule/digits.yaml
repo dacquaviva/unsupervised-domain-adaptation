@@ -1,8 +1,8 @@
 # @package _group_
 _target_: src.datamodule.datamodule.DataModule 
 
-source_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Digits/Synth_Digits/"
-target_domain_path : "/raid/JUPYTERHUB-DIRS/shared/tlnext/domain_adaptation/datasets/Digits/SVHN/"
+source_domain_path : "./datasets/Digits/Synth_Digits/"
+target_domain_path : "./datasets/Digits/SVHN/"
 dataset_type: Digits
 name_source_domain: Synth_Digits
 name_target_domain: SVHN
